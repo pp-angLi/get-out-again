@@ -1,0 +1,175 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url('https://cdn.protonsystem.io/backgroundImage0520.jpeg');
+  /* background-size: contain; */
+}
+
+html,
+h1,
+div,
+nav,
+p,
+span,
+small,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding-bottom: constant(safe-area-inset-bottom);
+  /* 兼容 iOS < 11.2 */
+  padding-bottom: env(safe-area-inset-bottom);
+  /* 兼容 iOS >= 11.2 */
+}
+
+.colorce2664 {
+  color: #ce2664;
+}
+
+.login_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.login_top {
+  text-align: center;
+}
+
+.login_top_icon {
+  width: 75%;
+}
+
+.login_middle_title_bold {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.login_middle_title {
+  font-size: 16px;
+}
+
+.login_middle_icon_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_middle_icon_list {
+  display: block;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.login_middle_icon_list_icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid;
+  border-radius: 40px;
+}
+
+.login_middle_icon_list:nth-of-type(1)>.login_middle_icon_list_icon {
+  border-color: rgba(0, 0, 255, 1);
+}
+
+.login_middle_icon_list:nth-of-type(2)>.login_middle_icon_list_icon {
+  border-color: rgba(0, 255, 0, 1);
+}
+
+.login_middle_icon_list:nth-of-type(3)>.login_middle_icon_list_icon {
+  border-color: rgba(255, 0, 0, 1);
+}
+
+.login_bottom {
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+.login_bottom_input_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px;
+}
+
+.input_title {
+  flex: 1;
+  text-align: right;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.input_content {
+  flex: 2;
+  text-align: left;
+}
+
+.input_content input {
+  font-size: 14px;
+  padding-left: 10px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.border_top {
+  border-top: 1px solid #ce2664;
+}
+
+.border_bototm {
+  border-bottom: 1px solid #ce2664;
+}
+
+.forget_password {
+  width: 100%;
+  margin: 10px 0;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.login_button_box {
+  width: 100%;
+  text-align: center;
+}
+
+.login_button {
+  width: 100%;
+}
+
+.login_button>button {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  background: #ce2664;
+  padding: 10px 0;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.login_tips {
+  position: fixed;
+  bottom: 5vh;
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  text-align: center;
+}

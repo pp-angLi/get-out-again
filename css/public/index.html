@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=contain">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body,
+    div,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      padding-bottom: constant(safe-area-inset-bottom);
+      /* 兼容 iOS < 11.2 */
+      padding-bottom: env(safe-area-inset-bottom);
+      /* 兼容 iOS >= 11.2 */
+    }
+
+
+
+    :root {
+      --width-test: 20px + 50%;
+    }
+
+    html {
+      --width-test: 50px + 50%;
+    }
+
+    .box {}
+
+
+
+    .box_inilne_block {
+      /* display: inline-block; */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>hah123a</h1>
+  <div class="hahadiv">
+
+  </div>
+  <div>
+    <img src="./img/juju.jpeg" width="800" height="400" />
+  </div>
+  <div class="background_test">
+  </div>
+  <div class="box">
+    <span class="box_span box_inilne_block">span </span><span class="box_span box_inilne_block">span span span span span
+      span spans pans pans pansssssss pan</span>
+
+    <div class="box_span">span</div>
+    <div class="box_span">span span span spansdf span span span span span span span</div>
+  </div>
+
+  <ul class="abc_box">
+    <li class="abc"></li>
+    <li class="abc"></li>
+    <li class="abc"></li>
+  </ul>
+  <ul class="abc_box">
+    <li class="abc"></li>
+    <li class="abc"></li>
+    <li class="abc"></li>
+  </ul>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>

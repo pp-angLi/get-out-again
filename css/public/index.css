@@ -1,0 +1,78 @@
+:root {
+  --main-bg-color: orange;
+}
+
+.hahadiv {
+  width: 10vw;
+  height: 10vw;
+  background: var(--main-bg-color);
+}
+
+.box_span {
+  /* display: none; */
+  background: #ce2664;
+  width: calc(var(--width-test));
+}
+
+img {
+  width: 400px;
+  height: 100px;
+  /* object-fit: scale-down; */
+  /* object-fit: cover; */
+  /* object-fit: contain; */
+  /* object-fit: fill; */
+  /* object-position: 0 10%; */
+  /* transform: rotateZ(45deg); */
+}
+
+.background_test {
+  width: 400px;
+  height: 100px;
+  /* background-size: cover; */
+  /* background-size: contain; */
+  /* background-size: 100% 100%; */
+  /* background-size: 400px 100px; */
+  background-image: url('../public/img/juju.jpeg');
+}
+
+.abc_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  height: 10vh;
+  box-sizing: border-box;
+}
+
+.abc_box:nth-last-of-type(1) {
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.abc {
+  display: inline-block;
+  margin: 5px;
+  flex: 1;
+  /* width: 100px;
+  height: 100px; */
+  background: black;
+}
+
+.footer1 {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  background: burlywood;
+}
+
+.footer2 {
+  bottom: 0px;
+  background: #ce2664;
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+
+  position: fixed;
+}
